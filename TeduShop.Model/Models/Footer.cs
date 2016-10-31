@@ -1,21 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TeduShop.Model.Models
 {
-    [Table("Footer")]
+    //using System.ComponentModel.DataAnnotations.Schema
+    [Table("Footers")]
     public class Footer
     {
+        //using System.ComponentModel.DataAnnotations;
         [Key]
         public string ID { get; set; }
 
+        //using System.ComponentModel.DataAnnotations;
         [Required]
         public string Content { get; set; }
-
     }
 }

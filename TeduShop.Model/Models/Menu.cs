@@ -12,12 +12,13 @@ namespace TeduShop.Model.Models
     public class Menu
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
         [Required]
         public string Name { get; set; }
         [Required]
         public string URL { get; set; }
-        public int DisplayOrder { get; set; }
+        public int? DisplayOrder { get; set; }
 
         [Required]
         public int GroupID { get; set; }

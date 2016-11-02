@@ -16,7 +16,7 @@ namespace TeduShop.Model.Models
         public string ID { get; set;  }
         [MaxLength(50)]
         [Required]
-        public string Name { get; set; }4
+        public string Name { get; set; }
 
         [MaxLength(50)]
         [Required]

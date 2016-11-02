@@ -10,7 +10,7 @@ using TeduShop.Model.Abstract;
 namespace TeduShop.Model.Models
 {
     [Table("PostCategory")]
-    public  class PostCategory : Auditable
+    public class PostCategory : Auditable
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -20,7 +20,7 @@ namespace TeduShop.Model.Models
         [MaxLength(256)]
         public string Name { set; get; }
         [Required]
-        [Column(TypeName ="varchar")]
+        [Column(TypeName = "varchar")]
         [MaxLength(256)]
         public string Alias { set; get; }
         public string Description { set; get; }
@@ -31,6 +31,6 @@ namespace TeduShop.Model.Models
         public bool? HomeFlag { set; get; }
         public virtual IEnumerable<Post> Posts { set; get; }
 
-       }
     }
 }
+

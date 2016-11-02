@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace TeduShop.Model.Models
 {
     [Table("Orders")]
-    class Order
+    public class Order
     {
         [Key]
         public int ID { get; set; }

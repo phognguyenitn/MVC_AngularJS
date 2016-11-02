@@ -9,14 +9,14 @@ using System.Threading.Tasks;
 namespace TeduShop.Model.Models
 {
     [Table("Tags")]
-    class Tag
+    public class Tag
     {
         [Key]
         [MaxLength(50)]
         public string ID { get; set;  }
         [MaxLength(50)]
         [Required]
-        public string Name { get; set; }4
+        public string Name { get; set; }
 
         [MaxLength(50)]
         [Required]

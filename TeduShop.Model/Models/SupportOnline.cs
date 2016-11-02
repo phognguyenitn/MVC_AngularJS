@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 namespace TeduShop.Model.Models
 {
     [Table("SupportOnline")]
-    class SupportOnline
+    public class SupportOnline
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity))]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
         [Required]
         [MaxLength(50)]

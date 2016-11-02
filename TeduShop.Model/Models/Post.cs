@@ -10,7 +10,7 @@ using TeduShop.Model.Abstract;
 namespace TeduShop.Model.Models
 {
     [Table("Post")]
-    class Post: Auditable
+    public class Post: Auditable
     {
         [Key]
         public int ID { set; get; }

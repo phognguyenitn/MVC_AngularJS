@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace TeduShop.Model.Models
 {
     [Table("Pages")]
-    class Page
+    public class Page
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

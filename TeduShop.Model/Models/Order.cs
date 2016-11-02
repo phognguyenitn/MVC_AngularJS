@@ -13,15 +13,29 @@ namespace TeduShop.Model.Models
     {
         [Key]
         public int ID { get; set; }
+        [Required]
+        [MaxLength(256)]
+        public string CustomerName { get; set; }
+        [Required]
+        [MaxLength(256)]
         public string CustomerAddress { get; set; }
+        [Required]
+        [MaxLength(256)]
         public string CustomerEmail { get; set; }
+        [Required]
+        [MaxLength(50)]
         public string CustomerMobile { get; set; }
+        [Required]
+        [MaxLength(256)]
         public string CustomerMessage { get; set;}
-        public DateTime CreatedDate { get; set; }
+        public DateTime? CreatedDate { get; set; }
         public string CreatedBy { get; set; }
+        
+        [MaxLength(256)]
         public string  PaymentMethod { get; set; }
         public string PamentStatus { get; set; }
-        public string Status { get; set;}
+        public bool Status { get; set;}
+        public virtual IEnumerable<OrdersDetail> OrderDetails { get; set; } 
          
     }
 }

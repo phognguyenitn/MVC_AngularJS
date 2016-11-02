@@ -12,13 +12,16 @@ namespace TeduShop.Model.Models
     class OrdersDetail
     {
        [Key]
-        [ForeignKey("OrderID")]
+   
         public int OrderID { get; set; }
         [Key]
-        [ForeignKey("ProductID")]
+       
         public int ProductID { get; set; }
         public int Quantily { get; set; }
-        public virtual Order Order { get; set; }
-        //Status k biết dạng Bit
+        [ForeignKey("OrderID")]
+        public virtual  Order Order { get; set; }
+        [ForeignKey("ProductID")]
+        public virtual Product Product { get; set; }
+     
     }
 }

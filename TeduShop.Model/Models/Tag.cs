@@ -12,9 +12,16 @@ namespace TeduShop.Model.Models
     class Tag
     {
         [Key]
-        [ForeignKey]
+        [MaxLength(50)]
         public string ID { get; set;  }
-        public string Name { get; set; }
+        [MaxLength(50)]
+        [Required]
+        public string Name { get; set; }4
+
+        [MaxLength(50)]
+        [Required]
         public string Type { get; set; }
+
+       
     }
 }

@@ -9,8 +9,9 @@ namespace TeduShop.Model.Models
     {
         //using System.ComponentModel.DataAnnotations;
         [Key]
+        [MaxLength(50)]
         public string ID { get; set; }
-
+         
         //using System.ComponentModel.DataAnnotations;
         [Required]
         public string Content { get; set; }

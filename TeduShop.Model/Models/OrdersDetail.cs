@@ -11,11 +11,11 @@ namespace TeduShop.Model.Models
     [Table("OrdersDetail")]
     public class OrdersDetail
     {
-       [Key]
-   
+        [Key]
+        [Column(Order=1)]
         public int OrderID { get; set; }
         [Key]
-       
+        [Column(Order = 2)]
         public int ProductID { get; set; }
         public int Quantily { get; set; }
         [ForeignKey("OrderID")]
